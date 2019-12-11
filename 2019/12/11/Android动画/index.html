@@ -46,28 +46,30 @@
   };
 </script>
 
-  <meta name="description" content="砥砺前行">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Harry.Jiang">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+  <meta name="description" content="帧动画将一张张单独的图片连贯的进行播放，从而在视觉上产生一种动画的效果  实现案例1&lt;?xml version&#x3D;&quot;1.0&quot; encoding&#x3D;&quot;utf-8&quot;?&gt;2&lt;animation-list xmlns:android&#x3D;&quot;http:&#x2F;&#x2F;schemas.android.com&#x2F;apk&#x2F;res&#x2F;android&quot;&gt;3    &lt;item4        android:dr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android动画记录">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;11&#x2F;Android%E5%8A%A8%E7%94%BB&#x2F;index.html">
 <meta property="og:site_name" content="Harry.Jiang">
-<meta property="og:description" content="砥砺前行">
+<meta property="og:description" content="帧动画将一张张单独的图片连贯的进行播放，从而在视觉上产生一种动画的效果  实现案例1&lt;?xml version&#x3D;&quot;1.0&quot; encoding&#x3D;&quot;utf-8&quot;?&gt;2&lt;animation-list xmlns:android&#x3D;&quot;http:&#x2F;&#x2F;schemas.android.com&#x2F;apk&#x2F;res&#x2F;android&quot;&gt;3    &lt;item4        android:dr">
+<meta property="article:published_time" content="2019-12-11T05:07:31.295Z">
+<meta property="article:modified_time" content="2019-12-11T05:09:31.708Z">
 <meta property="article:author" content="Harry">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/2019/12/11/Android%E5%8A%A8%E7%94%BB/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
-    isPost: false
+    isHome: false,
+    isPost: true
   };
 </script>
 
-  <title>Harry.Jiang</title>
+  <title>Android动画记录 | Harry.Jiang</title>
   
 
 
@@ -168,10 +170,10 @@
             
 
   <div class="posts-expand">
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/11/Android%E5%8A%A8%E7%94%BB/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -185,8 +187,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/12/11/Android%E5%8A%A8%E7%94%BB/" class="post-title-link" itemprop="url">Android动画记录</a>
+          Android动画记录
         </h1>
 
         <div class="post-meta">
@@ -211,7 +212,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h4 id="帧动画"><a href="#帧动画" class="headerlink" title="帧动画"></a>帧动画</h4><p>将一张张单独的图片连贯的进行播放，从而在视觉上产生一种动画的效果</p>
+        <h4 id="帧动画"><a href="#帧动画" class="headerlink" title="帧动画"></a>帧动画</h4><p>将一张张单独的图片连贯的进行播放，从而在视觉上产生一种动画的效果</p>
 <ul>
 <li>实现案例<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"utf-8"</span>?&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&lt;animation-<span class="built_in">list</span> xmlns:android=<span class="string">"http://schemas.android.com/apk/res/android"</span>&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    &lt;item</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">        android:drawable=<span class="string">"@drawable/a_0"</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">        android:duration=<span class="string">"100"</span> /&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    &lt;item</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">        android:drawable=<span class="string">"@drawable/a_1"</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">        android:duration=<span class="string">"100"</span> /&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">    &lt;item</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">        android:drawable=<span class="string">"@drawable/a_2"</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">        android:duration=<span class="string">"100"</span> /&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">&lt;/animation-<span class="built_in">list</span>&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">protected void on<span class="constructor">Create(@Nullable Bundle <span class="params">savedInstanceState</span>)</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">        super.on<span class="constructor">Create(<span class="params">savedInstanceState</span>)</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">        set<span class="constructor">ContentView(R.<span class="params">layout</span>.<span class="params">activity_frame_animation</span>)</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">        ImageView animationImg1 = (ImageView) find<span class="constructor">ViewById(R.<span class="params">id</span>.<span class="params">animation1</span>)</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">        animationImg1.set<span class="constructor">ImageResource(R.<span class="params">drawable</span>.<span class="params">frame_anim1</span>)</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">        AnimationDrawable animationDrawable1 = (AnimationDrawable) animationImg1.get<span class="constructor">Drawable()</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">        animationDrawable1.start<span class="literal">()</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr></table></figure>
 <a id="more"></a>
@@ -227,105 +228,42 @@
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">set</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="tag">    <span class="attr">android:interpolator</span>=<span class="string">"@[package:]anim/interpolator_resource"</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="tag">    <span class="attr">android:shareInterpolator</span>=<span class="string">[</span>"<span class="attr">true</span>" | "<span class="attr">false</span>"] &gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">alpha</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="tag">        <span class="attr">android:fromAlpha</span>=<span class="string">"float"</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="tag">        <span class="attr">android:toAlpha</span>=<span class="string">"float"</span> /&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">scale</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"><span class="tag">        <span class="attr">android:fromXScale</span>=<span class="string">"float"</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"><span class="tag">        <span class="attr">android:toXScale</span>=<span class="string">"float"</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line"><span class="tag">        <span class="attr">android:fromYScale</span>=<span class="string">"float"</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line"><span class="tag">        <span class="attr">android:toYScale</span>=<span class="string">"float"</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"><span class="tag">        <span class="attr">android:pivotX</span>=<span class="string">"float"</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line"><span class="tag">        <span class="attr">android:pivotY</span>=<span class="string">"float"</span> /&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">translate</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line"><span class="tag">        <span class="attr">android:fromXDelta</span>=<span class="string">"float"</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line"><span class="tag">        <span class="attr">android:toXDelta</span>=<span class="string">"float"</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line"><span class="tag">        <span class="attr">android:fromYDelta</span>=<span class="string">"float"</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line"><span class="tag">        <span class="attr">android:toYDelta</span>=<span class="string">"float"</span> /&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">rotate</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line"><span class="tag">        <span class="attr">android:fromDegrees</span>=<span class="string">"float"</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line"><span class="tag">        <span class="attr">android:toDegrees</span>=<span class="string">"float"</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line"><span class="tag">        <span class="attr">android:pivotX</span>=<span class="string">"float"</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line"><span class="tag">        <span class="attr">android:pivotY</span>=<span class="string">"float"</span> /&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">set</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">        ...</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">    <span class="tag">&lt;/<span class="name">set</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">set</span>&gt;</span></span></pre></td></tr></table></figure>
 <h4 id="属性动画"><a href="#属性动画" class="headerlink" title="属性动画"></a>属性动画</h4><figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> void <span class="constructor">RotateAnimation()</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">        ObjectAnimator anim = <span class="module-access"><span class="module"><span class="identifier">ObjectAnimator</span>.</span></span><span class="keyword">of</span><span class="constructor">Float(<span class="params">myView</span>, <span class="string">"rotation"</span>, 0f, 360f)</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">        anim.set<span class="constructor">Duration(1000)</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">        anim.start<span class="literal">()</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">private</span> void <span class="constructor">AlpahAnimation()</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">        ObjectAnimator anim = <span class="module-access"><span class="module"><span class="identifier">ObjectAnimator</span>.</span></span><span class="keyword">of</span><span class="constructor">Float(<span class="params">myView</span>, <span class="string">"alpha"</span>, 1.0f, 0.8f, 0.6f, 0.4f, 0.2f, 0.0f)</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">        anim.set<span class="constructor">RepeatCount(-1)</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">        anim.set<span class="constructor">RepeatMode(ObjectAnimator.REVERSE)</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">        anim.set<span class="constructor">Duration(2000)</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">        anim.start<span class="literal">()</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr></table></figure>
 <p>属性动画集：</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/12/11/Android%E5%8A%A8%E7%94%BB/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"> ObjectAnimator alphaAnim = <span class="module-access"><span class="module"><span class="identifier">ObjectAnimator</span>.</span></span><span class="keyword">of</span><span class="constructor">Float(<span class="params">myView</span>, <span class="string">"alpha"</span>, 1.0f, 0.5f, 0.8f, 1.0f)</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">                ObjectAnimator scaleXAnim = <span class="module-access"><span class="module"><span class="identifier">ObjectAnimator</span>.</span></span><span class="keyword">of</span><span class="constructor">Float(<span class="params">myView</span>, <span class="string">"scaleX"</span>, 0.0f, 1.0f)</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">                ObjectAnimator scaleYAnim = <span class="module-access"><span class="module"><span class="identifier">ObjectAnimator</span>.</span></span><span class="keyword">of</span><span class="constructor">Float(<span class="params">myView</span>, <span class="string">"scaleY"</span>, 0.0f, 2.0f)</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">                ObjectAnimator rotateAnim = <span class="module-access"><span class="module"><span class="identifier">ObjectAnimator</span>.</span></span><span class="keyword">of</span><span class="constructor">Float(<span class="params">myView</span>, <span class="string">"rotation"</span>, 0, 360)</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">                ObjectAnimator transXAnim = <span class="module-access"><span class="module"><span class="identifier">ObjectAnimator</span>.</span></span><span class="keyword">of</span><span class="constructor">Float(<span class="params">myView</span>, <span class="string">"translationX"</span>, 100, 400)</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">                ObjectAnimator transYAnim = <span class="module-access"><span class="module"><span class="identifier">ObjectAnimator</span>.</span></span><span class="keyword">of</span><span class="constructor">Float(<span class="params">myView</span>, <span class="string">"tranlsationY"</span>, 100, 750)</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">                AnimatorSet set = <span class="keyword">new</span> <span class="constructor">AnimatorSet()</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">                set.play<span class="constructor">Together(<span class="params">alphaAnim</span>, <span class="params">scaleXAnim</span>, <span class="params">scaleYAnim</span>, <span class="params">rotateAnim</span>, <span class="params">transXAnim</span>, <span class="params">transYAnim</span>)</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//                set.playSequentially(alphaAnim, scaleXAnim, scaleYAnim, rotateAnim, transXAnim, transYAnim);</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">                set.set<span class="constructor">Duration(3000)</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">                set.start<span class="literal">()</span>;</span></pre></td></tr></table></figure>
+
+<p><strong><em>Note:TypeEvaluator 决定了动画如何从初始值过渡到结束值。<br>TimeInterpolator 决定了动画从初始值过渡到结束值的节奏</em></strong></p>
+<p>自定义TypeEvaluator</p>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">public <span class="keyword">class</span> PointSinEvaluator implements TypeEvaluator &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    @Override</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    public Object evaluate(<span class="built_in">float</span> fraction, Object startValue, Object endValue) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">        Point startPoint = (Point) startValue;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">        Point endPoint = (Point) endValue;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">        <span class="built_in">float</span> x = startPoint.get<span class="constructor">X()</span> + fraction<span class="operator"> * </span>(endPoint.get<span class="constructor">X()</span> - startPoint.get<span class="constructor">X()</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">        <span class="built_in">float</span> y = (<span class="built_in">float</span>) (<span class="module-access"><span class="module"><span class="identifier">Math</span>.</span></span>sin(x<span class="operator"> * </span>Math.PI<span class="operator"> / </span><span class="number">180</span>)<span class="operator"> * </span><span class="number">100</span>) + endPoint.get<span class="constructor">Y()</span><span class="operator"> / </span><span class="number">2</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">        Point point = <span class="keyword">new</span> <span class="constructor">Point(<span class="params">x</span>, <span class="params">y</span>)</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">        return point;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">，第一个参数fraction 代表当前动画完成的百分比，这个值是如何变化的后面还会提到；第二个和第三个参数代表动画的初始值和结束值</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">Point startP = <span class="keyword">new</span> <span class="constructor">Point(RADIUS, RADIUS)</span>;<span class="comment">//初始值（起点）</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">        Point endP = <span class="keyword">new</span> <span class="constructor">Point(<span class="params">getWidth</span>()</span> - RADIUS, get<span class="constructor">Height()</span> - RADIUS);<span class="comment">//结束值（终点）</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">        final ValueAnimator valueAnimator = <span class="module-access"><span class="module"><span class="identifier">ValueAnimator</span>.</span></span><span class="keyword">of</span><span class="constructor">Object(<span class="params">new</span> PointSinEvaluator()</span>, startP, endP);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">        valueAnimator.set<span class="constructor">RepeatCount(-1)</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">        valueAnimator.set<span class="constructor">RepeatMode(ValueAnimator.REVERSE)</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">        valueAnimator.add<span class="constructor">UpdateListener(<span class="params">new</span> ValueAnimator.AnimatorUpdateListener()</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">            @Override</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">            public void on<span class="constructor">AnimationUpdate(ValueAnimator <span class="params">animation</span>)</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">                currentPoint = (Point) animation.get<span class="constructor">AnimatedValue()</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">                post<span class="constructor">Invalidate()</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">            &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">        &#125;);</span></pre></td></tr></table></figure>
+
+<p>属性动画当然也可以使用xml文件的方式实现</p>
+<figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;<span class="built_in">set</span> android:ordering=<span class="string">"sequentially"</span>&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    &lt;<span class="built_in">set</span>&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">        &lt;objectAnimator</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">            android:propertyName=<span class="string">"x"</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">            android:<span class="built_in">duration</span>=<span class="string">"500"</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">            android:valueTo=<span class="string">"400"</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">            android:valueType=<span class="string">"intType"</span>/&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">        &lt;objectAnimator</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">            android:propertyName=<span class="string">"y"</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">            android:<span class="built_in">duration</span>=<span class="string">"500"</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">            android:valueTo=<span class="string">"300"</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">            android:valueType=<span class="string">"intType"</span>/&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">    &lt;/<span class="built_in">set</span>&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">    &lt;objectAnimator</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">        android:propertyName=<span class="string">"alpha"</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">        android:<span class="built_in">duration</span>=<span class="string">"500"</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">        android:valueTo=<span class="string">"1f"</span>/&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">&lt;/<span class="built_in">set</span>&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">AnimatorSet <span class="built_in">set</span> = (AnimatorSet) AnimatorInflater.loadAnimator(myContext,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">    R.anim.property_animator);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span>.setTarget(myObject);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span>.start();</span></pre></td></tr></table></figure>
+
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/10/Java%E7%BA%BF%E7%A8%8B%E6%B1%A0/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Harry">
-      <meta itemprop="description" content="砥砺前行">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Harry.Jiang">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/12/10/Java%E7%BA%BF%E7%A8%8B%E6%B1%A0/" class="post-title-link" itemprop="url">Java线程池记录</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2019-12-10 13:51:19" itemprop="dateCreated datePublished" datetime="2019-12-10T13:51:19+08:00">2019-12-10</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-12-11 13:09:19" itemprop="dateModified" datetime="2019-12-11T13:09:19+08:00">2019-12-11</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="Thread-Runnable-Callable"><a href="#Thread-Runnable-Callable" class="headerlink" title="Thread/Runnable/Callable"></a>Thread/Runnable/Callable</h3><ul>
-<li>继承Thread<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> MyThread extend <span class="constructor">Thread()</span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    @Override</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    public void run<span class="literal">()</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">        super.run<span class="literal">()</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">        <span class="module-access"><span class="module"><span class="identifier">Log</span>.</span></span>i(<span class="module-access"><span class="module"><span class="identifier">Thread</span>.</span></span>current<span class="constructor">Thread()</span>.get<span class="constructor">Id()</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="constructor">MyThread()</span>.start<span class="literal">()</span>;</span></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/12/10/Java%E7%BA%BF%E7%A8%8B%E6%B1%A0/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/12/10/Java%E7%BA%BF%E7%A8%8B%E6%B1%A0/" rel="prev" title="Java线程池记录">
+      <i class="fa fa-chevron-left"></i> Java线程池记录
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
   
 
   </div>
-
-  
-
 
 
           </div>
@@ -376,6 +314,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#帧动画"><span class="nav-number">1.</span> <span class="nav-text">帧动画</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#补间动画"><span class="nav-number">2.</span> <span class="nav-text">补间动画</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#属性动画"><span class="nav-number">3.</span> <span class="nav-text">属性动画</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
