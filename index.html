@@ -123,7 +123,7 @@
             
 
             
-              <h3 id="帧动画"><a href="#帧动画" class="headerlink" title="帧动画"></a>帧动画</h3><p>将一张张单独的图片连贯的进行播放，从而在视觉上产生一种动画的效果</p>
+              可以通过动画添加视觉提示，向用户通知应用中的动态。当界面状态发生改变时（例如有新内容加载或有新操作可用时），动画尤其有用。动画还为应用增加了优美的外观，使其拥有更高品质的外观和风格.Android 根据您需要的动画类型提供不同的动画API
         </div>
             
           
@@ -156,12 +156,7 @@
             
 
             
-              <h3 id="Thread-Runnable-Callable"><a href="#Thread-Runnable-Callable" class="headerlink" title="Thread/Runnable/Callable"></a>Thread/Runnable/Callable</h3><ul>
-<li>继承Thread<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> MyThread extend <span class="constructor">Thread()</span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    @Override</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    public void run<span class="literal">()</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">        super.run<span class="literal">()</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">        <span class="module-access"><span class="module"><span class="identifier">Log</span>.</span></span>i(<span class="module-access"><span class="module"><span class="identifier">Thread</span>.</span></span>current<span class="constructor">Thread()</span>.get<span class="constructor">Id()</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="constructor">MyThread()</span>.start<span class="literal">()</span>;</span></pre></td></tr></table></figure>
-<a id="more"></a></li>
-<li>Runnable<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> MyThread implements Runnable&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    @Override</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    public void run<span class="literal">()</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">        <span class="module-access"><span class="module"><span class="identifier">Log</span>.</span></span>i(<span class="string">"MyThread"</span>, <span class="module-access"><span class="module"><span class="identifier">Thread</span>.</span></span>current<span class="constructor">Thread()</span>.get<span class="constructor">Name()</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">MyThreaed myThread = <span class="keyword">new</span> <span class="constructor">MyThread()</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="constructor">Thread(<span class="params">myThread</span>)</span>.start<span class="literal">()</span>;</span></pre></td></tr></table></figure></li>
-<li>Callable 的 call() 方法可以返回值和抛出异常,Callable 可以返回装载有计算结果的 Future 对象。</li>
-</ul>
+              构造一个线程池为什么需要几个参数？如果避免线程池出现OOM？Runnable和Callable的区别是什么？<br />
         </div>
             
           
